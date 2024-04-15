@@ -36,9 +36,6 @@ class DriverListView(generic.ListView):
     model = Driver
     paginate_by = 5
 
-    def get_queryset(self):
-        return Driver.objects.exclude(first_name="Admin")
-
 
 class DriverDetailView(generic.DetailView):
     model = Driver
