@@ -4,10 +4,10 @@
 {% endblock %}
 {% block content %}
   <h1 class="center">Manufacturers list</h1>
-  {% if manufacturers %}
+  {% if manufacturer_list %}
     <ol>
-      {% for manufacture in manufacturer_list %}
-        <li>(<strong>Manufacturer:</strong>{{ manufacture.name}}, <strong>Country:</strong> {{ manufacture.country }})</li>
+      {% for manufacturer in manufacturer_list %}
+        <li>(<strong>Manufacturer:</strong>{{ manufacturer.name}}, <strong>Country:</strong> {{ manufacturer.country }})</li>
       {% endfor %}
     </ol>
   {% endif %}
